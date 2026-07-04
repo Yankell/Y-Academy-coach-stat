@@ -1,0 +1,10 @@
+
+{
+"name":"BT Coach Stats",
+"short_name":"BT Stats",
+"display":"standalone",
+"start_url":"./",
+"background_color":"#f2f2f7",
+"theme_color":"#0a84ff",
+"icons":[]
+}
