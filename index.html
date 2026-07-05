@@ -2,50 +2,20 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BT Coach Stats</title>
+
+<link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h2>BT Coach Stats</h2>
+<header>
+<h1>BT Coach Stats</h1>
+</header>
 
-<table>
-
-<tr>
-<th></th>
-<th id="player1">Ylouan</th>
-<th id="player2">Yale</th>
-</tr>
-
-<tr>
-<td>Fautes directes</td>
-<td><button id="fd1" class="c red">0</button></td>
-<td><button id="fd2" class="c red">0</button></td>
-</tr>
-
-<tr>
-<td>Fautes provoquées</td>
-<td><button id="fp1" class="c red">0</button></td>
-<td><button id="fp2" class="c red">0</button></td>
-</tr>
-
-<tr>
-<td>Coups gagnants</td>
-<td><button id="cg1" class="c green">0</button></td>
-<td><button id="cg2" class="c green">0</button></td>
-</tr>
-
-<tr>
-<td><strong>🏆 Score</strong></td>
-<td><button id="sc1" class="c blue" disabled>0</button></td>
-<td><button id="sc2" class="c blue" disabled>0</button></td>
-</tr>
-
-</table>
-
-<button id="reset">🔄 Nouveau match</button>
+<main id="app"></main>
 
 <script src="app.js"></script>
 
