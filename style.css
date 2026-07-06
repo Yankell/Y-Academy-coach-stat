@@ -1,131 +1,107 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
-body {
-  background: #f5f5f5;
-  padding: 12px;
+body{
+    background:#f2f3f8;
+    padding:10px;
 }
 
-.card {
-  width: 100%;
-  max-width: 700px;
-  margin: auto;
-  background: white;
-  border-radius: 15px;
-  padding: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+.card{
+    background:white;
+    border-radius:20px;
+    padding:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    max-width:700px;
+    margin:auto;
 }
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th {
-  font-size: 22px;
-  padding: 12px;
-  background: #ff9800;
-  color: white;
-  border-radius: 8px;
-}
-
-td {
-  text-align: center;
-  padding: 10px;
-  font-size: 18px;
-}
-
-td:first-child {
-  text-align: left;
-  font-weight: bold;
-}
-
-button {
-  width: 100%;
-  min-height: 55px;
-  border: none;
-  border-radius: 10px;
-  background: #2196f3;
-  color: white;
-  font-size: 22px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:active {
-  transform: scale(0.96);
-}
-
-h2 {
-  font-size: 36px;
-}
-
-#swap,
-#reset {
-  margin-top: 15px;
-}
-
-/* ---------- Téléphone ---------- */
-
-@media (max-width: 700px) {
-
-  body {
-    padding: 5px;
-  }
-
-  .card {
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  th {
-    font-size: 18px;
-    padding: 8px;
-  }
-
-  td {
-    font-size: 14px;
-    padding: 6px;
-  }
-
-  button {
-    min-height: 60px;
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 42px;
-  }
-
-}
-@media (max-width: 700px) {
 
 table{
-    table-layout: fixed;
     width:100%;
+    border-collapse:separate;
+    border-spacing:8px;
+    table-layout:fixed;
 }
 
 th{
-    font-size:16px;
+    background:#ff9800;
+    color:white;
+    border-radius:12px;
+    padding:12px;
+    font-size:26px;
+}
+
+td:first-child{
+    width:34%;
+    font-weight:bold;
+    font-size:20px;
+    text-align:left;
 }
 
 td{
-    font-size:13px;
-    padding:4px;
+    text-align:center;
+    vertical-align:middle;
 }
 
 button{
     width:100%;
-    height:48px;
+    height:75px;
+    border:none;
+    border-radius:15px;
+    background:#2d8de0;
+    color:white;
+    font-size:32px;
+    font-weight:bold;
+}
+
+h2{
+    font-size:48px;
+}
+
+#swap,
+#reset{
+    margin-top:18px;
+}
+
+/* ----------- TELEPHONE ----------- */
+
+@media (max-width:700px){
+
+.card{
+    padding:8px;
+}
+
+table{
+    border-spacing:4px;
+}
+
+th{
     font-size:18px;
+    padding:8px;
+}
+
+td:first-child{
+    width:28%;
+    font-size:11px;
+    line-height:14px;
+}
+
+button{
+    height:58px;
+    font-size:24px;
 }
 
 h2{
     font-size:28px;
+}
+
+#swap,
+#reset{
+    height:60px;
+    font-size:18px;
 }
 
 }

@@ -27,7 +27,7 @@ function render() {
       <tr>
         <th></th>
         <th id="leftName">${data.left.name}</th>
-<th id="rightName">${data.right.name}</th>
+        <th id="rightName">${data.right.name}</th>
       </tr>
 
       <tr>
@@ -59,12 +59,12 @@ function render() {
     <br>
 
     <button id="swap">↔ Inverser</button>
-
     <button id="reset">Nouveau match</button>
 
   </div>
   `;
 
+  // Faute directe = point à l'adversaire
   document.getElementById("fdL").onclick = () => {
     data.left.fautesDirectes++;
     data.right.score++;
@@ -77,6 +77,7 @@ function render() {
     render();
   };
 
+  // Faute provoquée = point à l'adversaire
   document.getElementById("fpL").onclick = () => {
     data.left.fautesProvoquees++;
     data.right.score++;
@@ -89,6 +90,7 @@ function render() {
     render();
   };
 
+  // Coup gagnant = point au joueur
   document.getElementById("cgL").onclick = () => {
     data.left.coupsGagnants++;
     data.left.score++;
@@ -101,12 +103,14 @@ function render() {
     render();
   };
 
-  document.getElementById("swap").onclick = () => {
-    const tmp = data.left;
-    data.left = data.right;
-    data.right = tmp;
+  function swapPlayers() {
+    [data.left, data.right] = [data.right, data.left];
     render();
-  };
+  }
+
+  document.getElementById("leftName").onclick = swapPlayers;
+  document.getElementById("rightName").onclick = swapPlayers;
+  document.getElementById("swap").onclick = swapPlayers;
 
   document.getElementById("reset").onclick = () => {
     data = {
@@ -125,19 +129,8 @@ function render() {
         score: 0
       }
     };
-
     render();
   };
-  document.getElementById("leftName").onclick = swapPlayers;
-document.getElementById("rightName").onclick = swapPlayers;
-}
-function swapPlayers(){
-
-    let tmp = data.left;
-    data.left = data.right;
-    data.right = tmp;
-
-    render();
 }
 
 render();
