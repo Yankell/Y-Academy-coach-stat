@@ -129,7 +129,7 @@ function render() {
     render();
   };
   document.getElementById("leftName").onclick = swapPlayers;
-document.getElementById("rightName").onclick = swapPlayers;
+document.getElementById("rightName").onclick = swapPlayers;x
 }
 function swapPlayers(){
 
@@ -141,6 +141,3 @@ function swapPlayers(){
 }
 
 render();
-
-document.getElementById("leftName").onclick = swapPlayers;
-document.getElementById("rightName").onclick = swapPlayers;
