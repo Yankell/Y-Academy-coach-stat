@@ -105,3 +105,38 @@ h2{
 }
 
 }
+@media (max-width:700px){
+
+table{
+    display:block;
+    width:100%;
+}
+
+tbody{
+    display:block;
+    width:100%;
+}
+
+tr{
+    display:grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    align-items:center;
+    margin-bottom:8px;
+}
+
+th,
+td{
+    padding:6px;
+}
+
+button{
+    width:100%;
+    min-height:56px;
+    font-size:22px;
+}
+
+h2{
+    font-size:30px;
+}
+
+}
