@@ -79,7 +79,7 @@ function render() {
 
   document.getElementById("fpL").onclick = () => {
     data.left.fautesProvoquees++;
-    data.left.score++;
+    data.right.score++;
     render();
   };
 
@@ -129,7 +129,7 @@ function render() {
     render();
   };
   document.getElementById("leftName").onclick = swapPlayers;
-document.getElementById("rightName").onclick = swapPlayers;x
+document.getElementById("rightName").onclick = swapPlayers;
 }
 function swapPlayers(){
 
