@@ -55,17 +55,17 @@ button{
 
 /* Fautes directes */
 #fdL,#fdR{
-    background:#e53935;
+    background:#ff3b30;
 }
 
 /* Fautes provoquées */
 #fpL,#fpR{
-    background:#e53935;
+    background:#ff3b30;
 }
 
 /* Coups gagnants */
 #cgL,#cgR{
-    background:#43a047;
+    background:#34c759;
 }
 
 h2{
@@ -75,7 +75,7 @@ h2{
 
 #swap,#reset{
     margin-top:15px;
-    background:#1976d2;
+    background:#1e88e5;
 }
 
 @media (max-width:700px){
